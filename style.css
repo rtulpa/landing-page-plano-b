@@ -1,0 +1,202 @@
+body {
+  background-image: url(imagens/cookie.png); /* esta nao era a imagem original. a outra deu erro no github. tive que refazer o codigos*/
+  background-repeat: no-repeat;
+  color: rgb(89,51,40);
+  font-family: 'Lobster', cursive;
+  font-family: 'Open Sans', sans-serif;
+  }
+
+span {
+color: RGB(252,171,64);
+font-weight: bold;
+}
+    
+.take-the { 
+font-family: 'Lobster', cursive;
+font-size: 100px;
+position: relative;
+left: 27%;
+margin-top: 5%;
+margin-bottom: 0%;
+}
+
+.see-what {
+font-family: 'Open Sans', sans-serif;
+font-size: 30px;
+position: relative;
+left: 32%;
+margin-bottom: 0%;
+}
+
+.with-your {
+font-family: 'Open Sans', sans-serif;
+font-size: 30px;
+position: relative;
+left: 33%;
+margin-top: 1%;
+}
+    
+input {
+font-family: 'Open Sans', sans-serif;
+text-transform: uppercase;
+font-weight: bolder;
+font-size: 25px;
+color: rgb(89,51,40);
+position: relative;
+left: 40%;
+margin-top:2%;
+background-color: RGB(252,171,64);
+border-color: RGB(252,171,64);
+border-radius: 5px;
+}
+  
+.sentence {
+font-family: 'Lobster', cursive;
+font-weight: lighter;
+font-size: 40px;
+text-align: center;
+padding-right: 10%;
+background-color: RGBa(204,214,221,0.7);
+border-radius: 5px;
+margin-top: 8%;
+}
+
+.follow {
+font-family: 'Open Sans', sans-serif;
+font-weight: lighter;
+color: rgb(89,51,40);
+font-size: 20px;
+position: fixed;
+bottom: 40px;
+left: 1.8%;
+}
+
+ul {
+list-style: none;
+}
+  
+li {
+display: inline;
+}
+
+.linkedin{
+position: fixed;
+color: rgb(89,51,40);
+text-decoration: none;
+font-size: 25px;
+bottom: 2%;
+left:4%;
+}
+
+.github{
+position:fixed;
+color: rgb(89,51,40);
+text-decoration: none;
+font-size: 25px;
+bottom: 2%;
+left:6%;
+}
+
+
+
+@media (max-width: 1280px) {
+  body {
+    background-image: url(imagens/cookie.png); 
+    background-repeat: no-repeat;
+    color: rgb(89,51,40);
+    font-family: 'Lobster', cursive;
+    font-family: 'Open Sans', sans-serif;
+    }
+  
+  span {
+  color: RGB(252,171,64);
+  font-weight: bold;
+  }
+      
+  .take-the { 
+  font-family: 'Lobster', cursive;
+  font-size: 100px;
+  position: relative;
+  left: 27%;
+  margin-top: 5%;
+  margin-bottom: 0%;
+  }
+  
+  .see-what {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 30px;
+  position: relative;
+  left: 32%;
+  margin-bottom: 0%;
+  }
+  
+  .with-your {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 30px;
+  position: relative;
+  left: 33%;
+  margin-top: 1%;
+  }
+      
+  input {
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 25px;
+  color: rgb(89,51,40);
+  position: relative;
+  left: 40%;
+  margin-top:2%;
+  background-color: RGB(252,171,64);
+  border-color: RGB(252,171,64);
+  border-radius: 5px;
+  }
+    
+  .sentence {
+  font-family: 'Lobster', cursive;
+  font-weight: lighter;
+  font-size: 40px;
+  text-align: center;
+  padding-right: 10%;
+  background-color: RGBa(204,214,221,0.7);
+  border-radius: 5px;
+  margin-top: 8%;
+  }
+  
+  .follow {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: lighter;
+  color: rgb(89,51,40);
+  font-size: 20px;
+  position: fixed;
+  bottom: 40px;
+  left: 1.8%;
+  }
+  
+  ul {
+  list-style: none;
+  }
+    
+  li {
+  display: inline;
+  }
+  
+  .linkedin{
+  position: fixed;
+  color: rgb(89,51,40);
+  text-decoration: none;
+  font-size: 25px;
+  bottom: 2%;
+  left:4%;
+  }
+  
+  .github{
+  position:fixed;
+  color: rgb(89,51,40);
+  text-decoration: none;
+  font-size: 25px;
+  bottom: 2%;
+  left:6%;
+  }
+}
+  
