@@ -20,3 +20,14 @@ function sound(){
     var snd = new Audio('partir.mp3');
     snd.play();
 }
+
+function scrollToSlide5() {
+    const slide5 = document.getElementById('slide5');
+    slide5.scrollIntoView({ behavior: 'smooth' });
+  }
+
+
+window.onbeforeunload = function() {
+window.scrollTo(0, 0);
+}
+  

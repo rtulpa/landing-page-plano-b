@@ -1,32 +1,172 @@
 <html>
   <head>
+
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--new shit.-->
+
      <title>You Gotta Risk It</title>
      <meta charset="utf-8">    
      <link rel="icon" href="favicon.ico">
      <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-   <script src="https://kit.fontawesome.com/29ea429271.js" crossorigin="anonymous"></script>
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-   <link rel="stylesheet" href="style.css">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+      <script src="https://kit.fontawesome.com/29ea429271.js" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+      <link rel="stylesheet" href="style.css">
   </head>
-  <body>
-   <div class="animate__animated animate__fadeIn">
-      <h1 class="take-the">Take the Biscuit</h1>
-         <p class="see-what"> see what the <span> future </span> holds for you</p>
-         <p class="with-your"> with your digital <span> fortune cookie </span> </p>
-         <input id="btn" type="button" value="Crack it !" onclick="riskIt(); sound()";> </input>
-         
-         <p class="sentence" id="newSentence"></p>
-   </div>
-   <div class="follow">
-         <p> follow the creator</p>
-            <ul>
-               <li class="linkedin"><a href="https://www.linkedin.com/in/ritasoarespinto/" target="_blank"> <i class="fa-brands fa-linkedin-in" style="color: #593328;"></i></a></li>
-               <li class="github"><a href="https://github.com/rtulpa" target="_blank"> <i class="fa-brands fa-github" style="color: #593328;"></i></a></li>
-            </ul>
-   </div>
-<script src="app.js"></script> 
-<script src="partir.js"></script>  
-  </body>
+   <body class="animate__animated animate__fadeIn">
+
+
+      <!--new shit.-->
+      <div class="container">
+
+
+         <div class="slides slide1">
+         <img src="imagens/hands.jpg">
+            <div>
+               <h1 class="take-the">Take the Biscuit <br> <br> </h1>
+               <p class="see-what"> <span> see what the </span> future <span> holds for you </span> </p>
+               <p class="with-your">  <span> with your digital </span> fortune cookie </p>
+               <input id="btn" type="button" value=" Crack it ! " onclick="riskIt(); sound()";> </input>
+               
+               <p class="sentence" id="newSentence"> </p> <br> <br> <br> <br> 
+   
+            </div>
+         </div>   
+
+
+         <div class="slides slide2">
+         <img src="imagens/hide.JPG">
+            <h1> Follow the Creator </h1>
+               <ul>
+                  <li class="linkedin"><a href="https://www.linkedin.com/in/ritasoarespinto/" target="_blank"> <i class="fa-brands fa-linkedin-in" style="color: #f8f8f8;"></i></a></li>
+                  <li class="github"><a href="https://github.com/rtulpa" target="_blank"> <i class="fa-brands fa-github" style="color: #f8f8f8;"></i></a></li>
+                  <li class="behance"><a href="https://www.behance.net/rtulpa" target="_blank"> <i class="fa-brands fa-behance" style="color: #f8f8f8;"></i></a></li>
+                  <li class="instagram"><a href="https://www.instagram.com/rtulpa/" target="_blank"> <i class="fa-brands fa-instagram" style="color: #f8f8f8;"></i></a></li>
+                  <li class="instagram"><a href="https://open.spotify.com/user/1173049513?si=cf4c5c7204624028" target="_blank"> <i class="fa-brands fa-spotify" style="color: #f8f8f8;"></i></a></li>
+                  <br> <br> <br> <br>
+               </ul>
+         </div>
+
+
+         <div class="slides slide3">
+         <img src="imagens/unhide.JPG"> 
+            <h1> Okay, that's great. <br> But who are you, really? </h1>
+            <input class="speedDate" id="btnScrollTo" type="button" value=" Speed Date " onclick="scrollToSlide5()" />
+         </div>
+
+
+         <div class="slides slide4">
+         </div>
+
+
+         <div class="slides slide5" id="slide5">
+            <img src="imagens/Rita.png"> 
+            <h1> Hey there! </h1>
+            <h2 class="intro"> <span> <br> My name is </span> Rita <span> born in '94 - the year of grunge music. </span> <span> <br> 
+            Based in Lisbon, I consider myself an </span> outgoing and <br> creative person
+            <span> who likes to get out her bubble. </span> <br> <span> Here are a few of my </span> favourite things.
+             </h2>
+            <button class="playKhru" id="play" onclick="playMusic()"><i class="fa-solid fa-guitar"></i></button>
+            <script>
+              function playMusic() {
+                let audio = new Audio("ladyandman.mp3");
+                audio.play();
+              }
+            </script>
+          </div>
+          
+
+
+          <div class="slides slide6">
+            <div class="photo-grid">
+              <div class="grid-item">
+                <img src="imagens/analog.jpeg" alt="analog">
+                <div class="text-overlay">Film Photography</div>
+              </div>
+              <div class="grid-item">
+                <img src="imagens/festival.jpg" alt="festival">
+                <div class="text-overlay">Festivals and Live Music</div>
+              </div>
+              <div class="grid-item">
+                <img src="imagens/hiking.jpg" alt="hiking">
+                <div class="text-overlay">Hiking and Travelling</div>
+              </div>
+              <div class="grid-item">
+                <img src="imagens/ceramics.png" alt="ceramic">
+                <div class="text-overlay">Ceramic</div>
+              </div>
+              <div class="grid-item">
+                <img src="imagens/bouldering.jpeg" alt="bouldering">
+                <div class="text-overlay">Bouldering</div>
+              </div>
+              <div class="grid-item">
+                <img src="imagens/collages.jpeg" alt="collages">
+                <div class="text-overlay">Collages</div>
+              </div>
+            </div>
+          </div>
+
+
+         <div class="slides slide7">
+         </div>
+
+
+          <div class="slides slide8">
+            <img src="imagens/music.png"> 
+            <h2 class="mid"> <span> <br> Besides friends, family and my dog, </span> <br> music and photography <span> play a big role in my life. </span> <br> 
+               <span> I've copied album covers, sang and played guitar. <br> Below are some of my </span> lastest endeavours.
+             </h2>
+          </div>
+
+         <div class="slides slide9">
+            <div class="photo-grid">
+              <div class="grid-item">
+                <img src="imagens/barbra.png" alt="barbra">
+                <div class="text-overlay">Barbra Streisand, Fine and Dandy</div>
+              </div>
+              <div class="grid-item">
+                <img src="imagens/arctic.png" alt="arctic">
+                <div class="text-overlay">Arctic Monkeys, Whatever People Say I Am (...)</div>
+              </div>
+              <div class="grid-item">
+                <img src="imagens/sequin.png" alt="sequin">
+                <div class="text-overlay">Sequin, Penelope</div>
+              </div>
+              <div class="grid-item">
+               <img src="imagens/geres.JPG" alt="geres">
+               <div class="text-overlay">Sete Lagoas, Gerês</div>
+             </div>
+             <div class="grid-item">
+               <img src="imagens/buba.JPG" alt="buba">
+               <div class="text-overlay">Buba, São Pedro do Estoril</div>
+             </div>
+             <div class="grid-item">
+               <img src="imagens/primo.JPG" alt="primo">
+               <div class="text-overlay">Cousin, Braço de Prata</div>
+             </div>
+            </div>
+          </div>
+
+
+          <div class="slides slide10">
+          </div>
+
+
+          <div class="slides slide11">
+            <img src="imagens/pc.JPG"> 
+            <h2 class="end"> <span> <br> <br> My friends say I'm a </span> walking cultural agenda. <br>
+              <span> So if you want to know what to do this week </span><br>
+              send me a beep <span> and maybe we can meet! </span>
+              <br> <br> <br>
+             </h2>
+             <p><a href="mailto:rita.vsp@gmail.com" target="_blank" class="envelope"> <i class="fa-solid fa-paper-plane" style="color: #f8f8f8;"></i></a></p>
+
+          </div>
+
+
+      </div>  
+   
+      <script src="app.js"></script> 
+      <script src="partir.js"></script>  
+   </body>
 </html>
