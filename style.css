@@ -110,6 +110,11 @@ text-align: center;
 
 .slide2{
 background: linear-gradient(#E8C697, #EDE0BE);
+height: 30%;
+}
+
+.slide3{
+  background: linear-gradient(#E8C697, #EDE0BE);
 }
 
 
@@ -331,11 +336,11 @@ border-color: transparent;
   align-content: center;
 }
 
+
 .slide12{
   background: linear-gradient(#E8C697, #EDE0BE);
-  height: 50%;
+  align-content: center;
 }
-
 
 
 .envelope:hover{
@@ -351,4 +356,5 @@ font-size: 80px;
 padding: 4%;
 background-color: transparent;
 border-color: transparent;
+margin: 50px;
 }
