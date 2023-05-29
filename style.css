@@ -78,9 +78,9 @@ font-family: 'Open Sans', sans-serif;
 text-transform: uppercase;
 font-weight: bold;
 font-size: 25px;
-color: #452E26;
 position: relative;
-background-color: transparent;
+background-color: #452E26;
+color: #EDE0BE;
 box-shadow: rgba(0, 0, 0, 0.6);
 border: transparent;
 margin-top: 30px;
@@ -91,8 +91,8 @@ text-align: center
     
 
 input:hover {
-background-color: #452E26;
-color: #EDE0BE;
+background-color: transparent;
+color: #452E26;
 }
 
 
@@ -186,9 +186,9 @@ padding: 4%;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 25px;
-  color: #452E26;
   position: relative;
-  background-color: transparent;
+  background-color: #452E26;
+  color: #EDE0BE;
   box-shadow: rgba(0, 0, 0, 0.6);
   box-sizing: content-box;
   border: transparent;
@@ -199,8 +199,8 @@ padding: 4%;
 }
 
 .speedDate:hover {
-background-color: #452E26;
-color: #EDE0BE;
+background-color: transparent;
+color: #452E26;
 }
 
 
@@ -233,17 +233,17 @@ padding: 0px;
 
 .playKhru:hover{
   background-color: transparent;
-  color: #452E26;
+  color: #f6f6f6;
 }
 
 .playKhru{
 position: center;
-color: #f6f6f6;
 text-decoration: none;
 font-size: 80px;
 padding: 4%;
-background-color: transparent;
 border-color: transparent;
+background-color: transparent;
+color: #452E26;
 }
 
 
@@ -345,16 +345,16 @@ border-color: transparent;
 
 .envelope:hover{
   background-color: transparent;
-  color: #452E26;
+  color: #f6f6f6;
 }
 
 .envelope{
 position: center;
-color: #f6f6f6;
 text-decoration: none;
 font-size: 80px;
 padding: 4%;
 background-color: transparent;
+color: #452E26;
 border-color: transparent;
 margin: 50px;
 }
