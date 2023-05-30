@@ -45,7 +45,7 @@
                   <li class="linkedin"><a href="https://www.linkedin.com/in/ritasoarespinto/" target="_blank"> <i class="fa-brands fa-linkedin-in" style="color: #f8f8f8;"></i></a></li>
                   <li class="github"><a href="https://github.com/rtulpa" target="_blank"> <i class="fa-brands fa-github" style="color: #f8f8f8;"></i></a></li>
                   <li class="behance"><a href="https://www.behance.net/rtulpa" target="_blank"> <i class="fa-brands fa-behance" style="color: #f8f8f8;"></i></a></li>
-                  <li class="instagram"><a href="https://www.instagram.com/rtulpa/" target="_blank"> <i class="fa-brands fa-instagram" style="color: #f8f8f8;"></i></a></li>
+                  <li class="instagram"><a href="https://www.instagram.com/rtulpa/?igshid=MzNlNGNkZWQ4Mg%3D%3D" target="_blank"> <i class="fa-brands fa-instagram" style="color: #f8f8f8;"></i></a></li>
                   <li class="instagram"><a href="https://open.spotify.com/user/1173049513?si=cf4c5c7204624028" target="_blank"> <i class="fa-brands fa-spotify" style="color: #f8f8f8;"></i></a></li>
                   <br> <br> <br> <br>
                </ul>
@@ -65,21 +65,31 @@
 
 
 
-         <div class="slides slide6" id="slide6">
-            <img src="./imagens/Rita.png"> 
-            <h1> Hey there! </h1>
-            <h2 class="intro"> <span> <br> My name is </span> Rita <span> born in '94 - the year of grunge music. </span> <span> <br> 
-            Based in Lisbon, I consider myself an </span> outgoing and <br> creative person
+        <div class="slides slide6" id="slide6">
+          <img src="./imagens/Rita.png"> 
+          <h1> Hey there! </h1>
+          <h2 class="intro">
+            <span> <br> My name is </span> Rita <span> born in '94 - the year of grunge music. </span> 
+            <span> <br> Based in Lisbon, I consider myself an </span> outgoing and <br> creative person
             <span> who likes to get out her bubble. </span> <br> <span> Here are a few of my </span> favourite things.
-             </h2>
-            <button class="playKhru" id="play" onclick="playMusic()"><i class="fa-solid fa-guitar fa-beat" style="--fa-animation-duration: 3s;"></i></button>
-            <script>
-              function playMusic() {
-                let audio = new Audio("ladyandman.mp3");
-                audio.play();
-              }
-            </script>
-          </div>
+          </h2>
+          <button class="playKhru" id="play" onclick="toggleMusic()"><i class="fa-solid fa-guitar fa-beat" style="--fa-animation-duration: 3s;"></i></button>
+          <script>
+            var audio = new Audio("ladyandman.mp3");
+               var isPlaying = false;
+           
+               function toggleMusic() {
+                 if (isPlaying) {
+                   audio.pause();
+                   isPlaying = false;
+                 } else {
+                   audio.play();
+                   isPlaying = true;
+                 }
+               }
+          </script>
+ 
+        </div>
           
 
 

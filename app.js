@@ -30,4 +30,18 @@ var sentences = [
     window.onbeforeunload = function() {
     window.scrollTo(0, 0);
     }
-      
+
+    function sound(){
+        var audio = new Audio("ladyandman.mp3");
+            var isPlaying = false;
+        
+            function toggleMusic() {
+              if (isPlaying) {
+                audio.pause();
+                isPlaying = false;
+              } else {
+                audio.play();
+                isPlaying = true;
+              }
+            }
+    }
