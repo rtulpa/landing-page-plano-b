@@ -27,7 +27,6 @@
                <p class="see-what"> <span> see what the </span> future <span> holds for you </span> </p>
                <p class="with-your">  <span> with your digital </span> fortune cookie </p>
                <input id="btn" type="button" value=" Crack it ! " onclick="riskIt(); sound()";> </input>
-               
                <p class="sentence" id="newSentence"> </p> 
    
             </div>
@@ -73,23 +72,14 @@
             <span> <br> Based in Lisbon, I consider myself an </span> outgoing and <br> creative person
             <span> who likes to get out her bubble. </span> <br> <span> Here are a few of my </span> favourite things.
           </h2>
-          <button class="playKhru" id="play" onclick="toggleMusic()"><i class="fa-solid fa-guitar fa-beat" style="--fa-animation-duration: 3s;"></i></button>
-          <script>
-            var audio = new Audio("ladyandman.mp3");
-               var isPlaying = false;
-           
-               function toggleMusic() {
-                 if (isPlaying) {
-                   audio.pause();
-                   isPlaying = false;
-                 } else {
-                   audio.play();
-                   isPlaying = true;
-                 }
-               }
-          </script>
- 
-        </div>
+          <button class="playKhru" id="play" onclick="playMusic()"><i class="fa-solid fa-guitar"></i></button>
+            <script>
+              function playMusic() {
+                let audio = new Audio("ladyandman.mp3");
+                audio.play();
+              }
+            </script>
+          </div>
           
 
 
